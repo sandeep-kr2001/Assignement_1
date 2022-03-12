@@ -115,3 +115,26 @@ textarea {
     background-color: #faf4ed;
 }
 
+@media screen and (max-width: 550px) {
+    .container1{
+        display: grid;
+        grid-template-rows: 75px 200px 500px 75px ;
+        grid-template-columns: 32rem 1fr;
+        height:100%;
+        width:100%;
+        grid-template-areas: 
+            "header"
+            "sidebar"
+            "content"
+            "footer";
+    }
+    .addnotes   {
+        width: 250px;
+        height: 200px;   
+    }
+    .sidebar{
+        justify-content: center;
+        flex-direction: row;
+    }
+
+}
